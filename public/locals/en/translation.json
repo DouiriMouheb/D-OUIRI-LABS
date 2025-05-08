@@ -1,0 +1,17 @@
+{
+  "welcome": "Welcome",
+  "selectLanguage": "Select language",
+  "ourServices": "Our Services",
+  "companyName": "D-OUIRI",
+  "companySubtitle": "LABS",
+  "qualities": {
+    "quality": "Quality",
+    "innovation": "Innovation",
+    "excellence": "Excellence",
+    "precision": "Precision",
+    "adaptability": "Adaptability",
+    "transparency": "Transparency",
+    "efficiency": "Efficiency",
+    "expertise": "Expertise"
+  }
+}
