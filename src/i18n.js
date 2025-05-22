@@ -23,7 +23,7 @@ const resources = {
       },
       // ContactEmailModal translations
       contactModal: {
-        title: "Schedule Your Free Strategy Session",
+        title: "Contact Me ",
         name: "Your Name",
         namePlaceholder: "John Doe",
         email: "Email Address",
@@ -64,7 +64,7 @@ const resources = {
           text5: "Looking for a reliable partner?",
           text6: "Want to enhance your digital presence?",
         },
-        button: "Schedule Your Free Strategy Session",
+        button: "Contact Me",
         freeSession: "Its free and no strings attached 😉",
       },
     },
@@ -88,7 +88,7 @@ const resources = {
       },
       // ContactEmailModal translations
       contactModal: {
-        title: "Prenota la Tua Sessione Strategica Gratuita",
+        title: "Contattami",
         name: "Il Tuo Nome",
         namePlaceholder: "Mario Rossi",
         email: "Indirizzo Email",
@@ -130,7 +130,7 @@ const resources = {
           text5: "Cerchi un partner affidabile?",
           text6: "Vuoi migliorare la tua presenza digitale?",
         },
-        button: "Prenota la Tua Sessione Strategica Gratuita",
+        button: "Contattmmi",
         freeSession: "È gratuita e senza impegno 😉",
       },
     },

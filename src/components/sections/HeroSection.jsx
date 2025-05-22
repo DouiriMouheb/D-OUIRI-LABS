@@ -2,10 +2,16 @@ import React, { useState, useEffect } from "react";
 import ParticlesBackground from "../animations/ParticlesBackground";
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "../LanguageSelector";
+import ContactEmailModal from "../modals/ContactEmailModal";
 
 const HeroSection = () => {
   const { t, i18n } = useTranslation();
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleModalSubmit = (formData) => {
+    console.log("Form submitted:", formData);
+    // Here you would typically send the data to your backend
+    // e.g., using fetch() or axios to send a POST request
+  };
   // Array of texts to cycle through - now using translation keys
   const textKeys = [
     "qualities.quality",
@@ -122,7 +128,8 @@ const HeroSection = () => {
 
           {/* Right Column - Button with fixed visibility */}
           <div className="md:w-5/12 flex flex-col items-center mt-20 md:mt-0 z-10">
-            <a
+            {/* 
+                <a
               href="#services"
               className="bg-[#3385c6] text-white px-8 py-3 rounded-md font-medium block hover:bg-gray-100 hover:text-[#3385c6] transition-colors mb-6"
               onClick={(e) => {
@@ -134,12 +141,24 @@ const HeroSection = () => {
             >
               {t("ourServices")}
             </a>
+            */}
+            <button
+              className="mt-4 bg-[#3385c6] text-white px-8 py-3 rounded-md font-medium hover:bg-gray-100 hover:text-[#3385c6] transition-colors"
+              onClick={() => setIsModalOpen(true)}
+            >
+              {t("services.button")}
+            </button>
 
             {/* Using the new LanguageSelector component */}
             <LanguageSelector className="mt-4" />
           </div>
         </div>
       </div>
+      <ContactEmailModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        onSubmit={handleModalSubmit}
+      />
     </div>
   );
 };

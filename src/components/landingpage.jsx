@@ -5,7 +5,8 @@ function LandingPage() {
   return (
     <div className=" bg-white">
       <HeroSection />
-      <ServicesSection />
+
+      {/* <ServicesSection /> */}
     </div>
   );
 }
